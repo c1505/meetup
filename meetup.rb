@@ -7,10 +7,25 @@ class Meetup
   end
   
   def day(weekday, eenth)
-    day = 13
-    while !Date.new(@year, @month, day).send(weekday.to_s + '?')
-      day += 1
+    case eenth
+    when :teenth
+      day = 13
+      while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+        day += 1
+      end
+      Date.new(@year, @month, day)
+    when :first
+      day = 1
+      while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+        day += 1
+      end
+      Date.new(@year, @month, day)
     end
-    Date.new(@year, @month, day)
+    
   end
 end
+  # def test_first_monday_of_march_2013
+    
+  #   assert_equal Date.new(2013, 3, 4),
+  #     Meetup.new(3, 2013).day(:monday, :first)
+  # end
