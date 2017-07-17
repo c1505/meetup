@@ -20,9 +20,45 @@ class Meetup
         day += 1
       end
       Date.new(@year, @month, day)
+    when :second
+      second(weekday)
+    when :third
+      third(weekday)
+      # day = 1
+      # while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+      #   day += 1
+      # end
+      # Date.new(@year, @month, day)
+      # Date.new(2013, 3, 11)
     end
     
   end
+  
+  def first(weekday)
+    day = 1
+    while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+      day += 1
+    end
+    Date.new(@year, @month, day)
+  end
+  
+  def second(weekday)
+    day = first(weekday).day + 1
+    while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+      day += 1
+    end
+    Date.new(@year, @month, day)
+  end
+  
+  def third(weekday)
+    day = second(weekday).day + 1
+    while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+      day += 1
+    end
+    Date.new(@year, @month, day)
+  end
+    
+    
 end
   # def test_first_monday_of_march_2013
     
