@@ -22,7 +22,7 @@ class MeetupTest < Minitest::Test
   end
 
   def test_monteenth_of_september_2013
-    skip
+    
     assert_equal Date.new(2013, 9, 16),
       Meetup.new(9, 2013).day(:monday, :teenth)
   end
@@ -394,163 +394,163 @@ class MeetupTest < Minitest::Test
   end
 
   def test_fourth_monday_of_april_2013
-    skip
+    
     assert_equal Date.new(2013, 4, 22),
       Meetup.new(4, 2013).day(:monday, :fourth)
   end
 
   def test_fourth_tuesday_of_may_2013
-    skip
+    
     assert_equal Date.new(2013, 5, 28),
       Meetup.new(5, 2013).day(:tuesday, :fourth)
   end
 
   def test_fourth_tuesday_of_june_2013
-    skip
+    
     assert_equal Date.new(2013, 6, 25),
       Meetup.new(6, 2013).day(:tuesday, :fourth)
   end
 
   def test_fourth_wednesday_of_july_2013
-    skip
+    
     assert_equal Date.new(2013, 7, 24),
       Meetup.new(7, 2013).day(:wednesday, :fourth)
   end
 
   def test_fourth_wednesday_of_august_2013
-    skip
+    
     assert_equal Date.new(2013, 8, 28),
       Meetup.new(8, 2013).day(:wednesday, :fourth)
   end
 
   def test_fourth_thursday_of_september_2013
-    skip
+    
     assert_equal Date.new(2013, 9, 26),
       Meetup.new(9, 2013).day(:thursday, :fourth)
   end
 
   def test_fourth_thursday_of_october_2013
-    skip
+    
     assert_equal Date.new(2013, 10, 24),
       Meetup.new(10, 2013).day(:thursday, :fourth)
   end
 
   def test_fourth_friday_of_november_2013
-    skip
+    
     assert_equal Date.new(2013, 11, 22),
       Meetup.new(11, 2013).day(:friday, :fourth)
   end
 
   def test_fourth_friday_of_december_2013
-    skip
+    
     assert_equal Date.new(2013, 12, 27),
       Meetup.new(12, 2013).day(:friday, :fourth)
   end
 
   def test_fourth_saturday_of_january_2013
-    skip
+    
     assert_equal Date.new(2013, 1, 26),
       Meetup.new(1, 2013).day(:saturday, :fourth)
   end
 
   def test_fourth_saturday_of_february_2013
-    skip
+    
     assert_equal Date.new(2013, 2, 23),
       Meetup.new(2, 2013).day(:saturday, :fourth)
   end
 
   def test_fourth_sunday_of_march_2013
-    skip
+    
     assert_equal Date.new(2013, 3, 24),
       Meetup.new(3, 2013).day(:sunday, :fourth)
   end
 
   def test_fourth_sunday_of_april_2013
-    skip
+    
     assert_equal Date.new(2013, 4, 28),
       Meetup.new(4, 2013).day(:sunday, :fourth)
   end
 
   def test_last_monday_of_march_2013
-    skip
+    
     assert_equal Date.new(2013, 3, 25),
       Meetup.new(3, 2013).day(:monday, :last)
   end
 
   def test_last_monday_of_april_2013
-    skip
+    
     assert_equal Date.new(2013, 4, 29),
       Meetup.new(4, 2013).day(:monday, :last)
   end
 
   def test_last_tuesday_of_may_2013
-    skip
+    
     assert_equal Date.new(2013, 5, 28),
       Meetup.new(5, 2013).day(:tuesday, :last)
   end
 
   def test_last_tuesday_of_june_2013
-    skip
+    
     assert_equal Date.new(2013, 6, 25),
       Meetup.new(6, 2013).day(:tuesday, :last)
   end
 
   def test_last_wednesday_of_july_2013
-    skip
+    
     assert_equal Date.new(2013, 7, 31),
       Meetup.new(7, 2013).day(:wednesday, :last)
   end
 
   def test_last_wednesday_of_august_2013
-    skip
+    
     assert_equal Date.new(2013, 8, 28),
       Meetup.new(8, 2013).day(:wednesday, :last)
   end
 
   def test_last_thursday_of_september_2013
-    skip
+    
     assert_equal Date.new(2013, 9, 26),
       Meetup.new(9, 2013).day(:thursday, :last)
   end
 
   def test_last_thursday_of_october_2013
-    skip
+    
     assert_equal Date.new(2013, 10, 31),
       Meetup.new(10, 2013).day(:thursday, :last)
   end
 
   def test_last_friday_of_november_2013
-    skip
+    
     assert_equal Date.new(2013, 11, 29),
       Meetup.new(11, 2013).day(:friday, :last)
   end
 
   def test_last_friday_of_december_2013
-    skip
+    
     assert_equal Date.new(2013, 12, 27),
       Meetup.new(12, 2013).day(:friday, :last)
   end
 
   def test_last_saturday_of_january_2013
-    skip
+    
     assert_equal Date.new(2013, 1, 26),
       Meetup.new(1, 2013).day(:saturday, :last)
   end
 
   def test_last_saturday_of_february_2013
-    skip
+    
     assert_equal Date.new(2013, 2, 23),
       Meetup.new(2, 2013).day(:saturday, :last)
   end
 
   def test_last_sunday_of_march_2013
-    skip
+    
     assert_equal Date.new(2013, 3, 31),
       Meetup.new(3, 2013).day(:sunday, :last)
   end
 
   def test_last_sunday_of_april_2013
-    skip
+    
     assert_equal Date.new(2013, 4, 28),
       Meetup.new(4, 2013).day(:sunday, :last)
   end

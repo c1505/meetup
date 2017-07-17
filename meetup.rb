@@ -24,12 +24,10 @@ class Meetup
       second(weekday)
     when :third
       third(weekday)
-      # day = 1
-      # while !Date.new(@year, @month, day).send(weekday.to_s + '?')
-      #   day += 1
-      # end
-      # Date.new(@year, @month, day)
-      # Date.new(2013, 3, 11)
+    when :fourth
+      fourth(weekday)
+    when :last
+      last(weekday)
     end
     
   end
@@ -57,11 +55,26 @@ class Meetup
     end
     Date.new(@year, @month, day)
   end
+  
+  def fourth(weekday)
+    day = third(weekday).day + 1
+    while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+      day += 1
+    end
+    Date.new(@year, @month, day)
+  end
+  
+  def last(weekday)
+    day = fourth(weekday).day + 1
+    begin
     
+      while !Date.new(@year, @month, day).send(weekday.to_s + '?')
+        day += 1
+      end
+      rescue
+        day = fourth(weekday).day
+    end
+    Date.new(@year, @month, day)
+  end
     
 end
-  # def test_first_monday_of_march_2013
-    
-  #   assert_equal Date.new(2013, 3, 4),
-  #     Meetup.new(3, 2013).day(:monday, :first)
-  # end
